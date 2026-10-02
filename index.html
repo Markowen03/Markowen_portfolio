@@ -1,0 +1,570 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Owen Dev</title>
+    <link rel="icon" type="image/png" href="assets/img/owen_pixel.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="dark-theme">
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="nav__brand">
+          <a href="#home" class="nav__logo">
+            owen<span class="nav__logo-ext">.dev</span>
+          </a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <span class="nav__dot nav__dot--home"></span>
+                Home<span class="nav__ext">.jsx</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <span class="nav__dot nav__dot--about"></span>
+                About<span class="nav__ext">.md</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <span class="nav__dot nav__dot--skills"></span>
+                Skills<span class="nav__ext">.json</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#school" class="nav__link">
+                <span class="nav__dot nav__dot--school"></span>
+                Education<span class="nav__ext">.yml</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <span class="nav__dot nav__dot--projects"></span>
+                Projects<span class="nav__ext">/</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <span class="nav__dot nav__dot--contact"></span>
+                Contact<span class="nav__ext">.js</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <i class="bx bx-moon"></i>
+        </button>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <section class="home bd-grid" id="home">
+        <div class="home__content">
+          <div class="home__terminal">
+            <div class="home__terminal-bar">
+              <span></span><span></span><span></span>
+            </div>
+
+            <p class="home__terminal-line">
+              <span class="home__terminal-prompt">$</span>
+              <span id="typed-text"></span
+              ><span class="home__terminal-cursor">▍</span>
+            </p>
+          </div>
+
+          <h1 class="home__title">
+            Mark Owen
+
+            <span class="home__title-color"> Badua </span>
+          </h1>
+
+          <h2 class="home__profession">
+            Web Developer
+
+            <span>/</span>
+
+            Mobile Developer
+          </h2>
+
+          <p class="home__description">
+            I build fast, responsive web apps and cross-platform mobile
+            experiences — handling everything from database design to the
+            small interface details that make software feel finished.
+          </p>
+
+          <div class="home__buttons">
+            <a href="#projects" class="button"> View Projects </a>
+
+            <a href="#contact" class="button button--ghost"> Contact Me </a>
+          </div>
+        </div>
+
+        <div class="home__img">
+          <div class="home__profile">
+            <img src="assets/img/about.jpg" alt="Mark Owen Badua" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <span class="section-tab">
+          <span class="nav__dot nav__dot--about"></span>
+          about.md
+        </span>
+
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/profile_work.JPG" alt="Mark Owen Badua" />
+          </div>
+
+          <div class="about__content">
+            <h2 class="about__subtitle">I'm Mark Owen Badua</h2>
+
+            <p class="about__text">
+              I'm a fourth-year Bachelor of Science in Information Technology
+              student at <strong>Fullbright College</strong>
+              in Puerto Princesa City, Philippines.
+            </p>
+
+            <p class="about__text">
+              I enjoy creating modern web applications, responsive websites,
+              and Flutter mobile applications with clean, maintainable code
+              and intuitive user experiences.
+            </p>
+
+            <p class="about__text">
+              My main interests are frontend development, backend
+              development, mobile app development, UI/UX design, and
+              database systems.
+            </p>
+
+            <div class="about__info">
+              <div class="about__info-box">
+                <span class="about__info-title"> 4th </span>
+
+                <span class="about__info-name"> Year BSIT </span>
+              </div>
+
+              <div class="about__info-box">
+                <span class="about__info-title"> 6+ </span>
+
+                <span class="about__info-name"> Projects Built </span>
+              </div>
+
+              <div class="about__info-box">
+                <span class="about__info-title"> 11+ </span>
+
+                <span class="about__info-name"> Technologies </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <span class="section-tab">
+          <span class="nav__dot nav__dot--skills"></span>
+          skills.json
+        </span>
+
+        <h2 class="section-title">Tech Stack</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skill__tile html">
+            <i class="bx bxl-html5"></i>
+            <span>HTML5</span>
+          </div>
+
+          <div class="skill__tile css">
+            <i class="bx bxl-css3"></i>
+            <span>CSS3</span>
+          </div>
+
+          <div class="skill__tile js">
+            <i class="bx bxl-javascript"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="skill__tile php">
+            <i class="fa-brands fa-php"></i>
+            <span>PHP</span>
+          </div>
+
+          <div class="skill__tile python">
+            <i class="bx bxl-python"></i>
+            <span>Python</span>
+          </div>
+
+          <div class="skill__tile csharp">
+            <i class="bx bx-code-alt"></i>
+            <span>C#</span>
+          </div>
+
+          <div class="skill__tile mysql">
+            <i class="bx bxs-data"></i>
+            <span>MySQL</span>
+          </div>
+
+          <div class="skill__tile mongodb">
+            <i class="bx bx-data"></i>
+            <span>MongoDB</span>
+          </div>
+
+          <div class="skill__tile flutter">
+            <i class="bx bxl-flutter"></i>
+            <span>Flutter</span>
+          </div>
+
+          <div class="skill__tile git">
+            <i class="bx bxl-git"></i>
+            <span>Git</span>
+          </div>
+
+          <div class="skill__tile github">
+            <i class="bx bxl-github"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="school section" id="school">
+        <span class="section-tab">
+          <span class="nav__dot nav__dot--school"></span>
+          education.yml
+        </span>
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education__container bd-grid">
+          <div class="education__logo">
+            <img
+              src="assets/img/Fullbright_logo_removebg.png"
+              alt="Fullbright College"
+            />
+          </div>
+
+          <div class="education__content">
+            <span class="education__year"> 2026 - Present </span>
+
+            <h2>Bachelor of Science in Information Technology</h2>
+
+            <h3>Fullbright College</h3>
+
+            <p>
+              Currently pursuing my bachelor's degree in Information
+              Technology while continuously improving my skills in web
+              development, Flutter mobile development, database management,
+              and software engineering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <span class="section-tab">
+          <span class="nav__dot nav__dot--projects"></span>
+          projects/
+        </span>
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects__container bd-grid">
+          <article class="project__card project__card--web">
+            <div class="project__image">
+              <img
+                src="assets/img/nail_salon.jpg"
+                alt="Online Appointment Booking Web System"
+              />
+            </div>
+
+            <div class="project__content">
+              <span class="project__category"> Web Development </span>
+
+              <h2 class="project__title">
+                Online Appointment Booking Web System
+              </h2>
+
+              <p class="project__description">
+                A web-based appointment booking system for a nail salon,
+                allowing customers to schedule appointments online and manage
+                their bookings efficiently.
+              </p>
+
+              <div class="project__tech">
+                <span class="tech html">HTML</span>
+                <span class="tech css">CSS</span>
+                <span class="tech js">JavaScript</span>
+                <span class="tech php">PHP</span>
+                <span class="tech mongodb">MongoDB</span>
+                <span class="tech bootstrap">Bootstrap</span>
+              </div>
+
+              <div class="project__buttons">
+                <a href="#" class="button button--small"> GitHub </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card project__card--mobile">
+            <div class="project__image">
+              <img
+                src="assets/img/mobile.jpg"
+                alt="QA Learning Mobile Application"
+              />
+            </div>
+
+            <div class="project__content">
+              <span class="project__category"> Mobile Development </span>
+
+              <h2 class="project__title">QA Learning Mobile Application</h2>
+
+              <p class="project__description">
+                A Flutter application designed to help students manage
+                subjects, reminders, schedules, and study progress using a
+                clean and modern interface.
+              </p>
+
+              <div class="project__tech">
+                <span class="tech flutter">Flutter</span>
+                <span class="tech dart">Dart</span>
+              </div>
+
+              <div class="project__buttons">
+                <a href="#" class="button button--small"> GitHub </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card project__card--web">
+            <div class="project__image">
+              <img
+                src="assets/img/pokedex.jpg"
+                alt="Pokemon Pokedex Web Application"
+              />
+            </div>
+
+            <div class="project__content">
+              <span class="project__category"> Web Development </span>
+
+              <h2 class="project__title">Pokemon Pokedex Web Application</h2>
+
+              <p class="project__description">
+                A responsive web application that allows users to search and
+                view information about various Pokémon species.
+              </p>
+
+              <div class="project__tech">
+                <span class="tech html">HTML</span>
+                <span class="tech css">CSS</span>
+                <span class="tech js">JavaScript</span>
+                <span class="tech api">Pokemon API</span>
+              </div>
+
+              <div class="project__buttons">
+                <a href="#" class="button button--small"> GitHub </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card project__card--web">
+            <div class="project__image">
+              <img
+                src="assets/img/ecom.png"
+                alt="E-commerce Web Application"
+              />
+            </div>
+
+            <div class="project__content">
+              <span class="project__category"> Web Development </span>
+
+              <h2 class="project__title">E-commerce Web Application</h2>
+
+              <p class="project__description">
+                A responsive e-commerce website that allows users to browse
+                products, add them to the cart, and complete purchases.
+              </p>
+
+              <div class="project__tech">
+                <span class="tech html">HTML</span>
+                <span class="tech css">CSS</span>
+                <span class="tech js">JavaScript</span>
+                <span class="tech php">PHP</span>
+                <span class="tech mysql">MySQL</span>
+                <span class="tech bootstrap">Bootstrap</span>
+              </div>
+              <div class="project__buttons">
+                <a href="#" class="button button--small"> GitHub </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project__card project__card--web">
+            <div class="project__image">
+              <img
+                src="assets/img/inventory.png"
+                alt="Inventory Management System"
+              />
+            </div>
+
+            <div class="project__content">
+              <span class="project__category"> Web Development </span>
+
+              <h2 class="project__title">Inventory Management System</h2>
+
+              <p class="project__description">
+                A responsive inventory management system that allows users to
+                track and manage stock levels efficiently through a clean and
+                user-friendly interface.
+              </p>
+
+              <div class="project__tech">
+                <span class="tech html">HTML</span>
+                <span class="tech css">CSS</span>
+                <span class="tech js">JavaScript</span>
+                <span class="tech php">PHP</span>
+                <span class="tech mysql">MySQL</span>
+                <span class="tech bootstrap">Bootstrap</span>
+              </div>
+
+              <div class="project__buttons">
+                <a href="#" class="button button--small"> GitHub </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <span class="section-tab">
+          <span class="nav__dot nav__dot--contact"></span>
+          contact.js
+        </span>
+
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__content">
+            <h2>Let's build something together.</h2>
+
+            <p class="contact__text">
+              I'm currently open to internship opportunities, freelance
+              projects, and professional collaborations.
+            </p>
+
+            <div class="contact__social">
+              <a href="https://github.com/Markowen03" target="_blank">
+                <i class="bx bxl-github"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/markowenlincallo.badua"
+                target="_blank"
+              >
+                <i class="bx bxl-facebook"></i>
+              </a>
+
+              <a href="mailto:markowenbadua711@gmail.com">
+                <i class="bx bx-envelope"></i>
+              </a>
+            </div>
+            <br />
+            <div class="contact__info">
+              <div class="contact__item">
+                <i class="bx bx-map"></i>
+
+                <span>Puerto Princesa City, Palawan, Philippines</span>
+              </div>
+            </div>
+
+            <div class="contact__map-card">
+              <div class="contact__map-header">
+                <a
+                  href="https://maps.google.com/?q=Puerto+Princesa+City,+Palawan,+Philippines"
+                  target="_blank"
+                  class="contact__map-link"
+                >
+                  View on Maps
+
+                  <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+
+              <div class="contact__map-frame">
+                <iframe
+                  src="https://www.google.com/maps?q=Puerto+Princesa+City,+Palawan,+Philippines&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+
+              <div class="contact__map-footer">
+                <i class="bx bx-map-pin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <h2 class="footer__name">Mark Owen Badua</h2>
+
+        <p class="footer__tagline">
+          Web Developer • Mobile Developer • BSIT Student
+        </p>
+
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer__bottom">
+          <small> © 2026 Mark Owen Badua. All rights reserved. </small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
